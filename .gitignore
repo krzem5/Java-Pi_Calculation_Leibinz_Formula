@@ -1,2 +1,2 @@
 build
-com/krzem/pi_calculation_leibinz_formula/*.txt
+src/**/*.txt
