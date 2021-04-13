@@ -27,7 +27,7 @@ public class Main{
 
 
 
-	private String[] _arctan_1_x_4(String nf){/*  =Math.atan(1)*4  */
+	private String[] _arctan_1_x_4(String nf){
 		String n="1";
 		String dn="1";
 		String i="1";
@@ -248,9 +248,10 @@ public class Main{
 		this._file=true;
 		Main cls=this;
 		new Thread(new Runnable(){
+			@Override
 			public void run(){
 				try{
-					BufferedWriter w=new BufferedWriter(new FileWriter("com/krzem/pi_calculation_leibinz_formula/dump.txt"));
+					BufferedWriter w=new BufferedWriter(new FileWriter("dump.txt"));
 					w.write(String.format("%s\n\n\n%s\n\n\n%s",i,n,dn));
 					w.close();
 					cls._file=false;
